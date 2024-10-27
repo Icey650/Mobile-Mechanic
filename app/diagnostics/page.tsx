@@ -14,17 +14,17 @@ const tabs = [
 const sections = [
   {
     title: "Advanced Automotive Technology",
-    content: "In today&apos;s tech-driven world, your vehicle is packed with advanced technology that enhances your driving experience. However, this complexity can make auto repairs challenging if you&apos;re not fluent in your car&apos;s digital language. That&apos;s where we come in!",
+    content: "In todays tech-driven world, your vehicle is packed with advanced technology that enhances your driving experience. However, this complexity can make auto repairs challenging if you are not fluent in your car's digital language. Thats where we come in!",
     image: "/images/autotech.png",
   },
   {
     title: "Expert Mobile Mechanics",
-    content: "Our mobile mechanics are experts in mobile computer diagnostics, ready to decode what your car is trying to tell us—all from the comfort of your location. Using state-of-the-art diagnostic equipment, we can access your vehicle&apos;s systems much like a doctor assesses symptoms before diagnosing an issue.",
+    content: "Our mobile mechanics are experts in mobile computer diagnostics, ready to decode what your car is trying to tell us, all from the comfort of your location. Using state-of-the-art diagnostic equipment, we can access your vehicle's systems much like a doctor assesses symptoms before diagnosing an issue.",
     image: "/images/scannerpic.png",
   },
   {
     title: "Convenience at Your Doorstep",
-    content: "With our mobile diagnostics service, there&apos;s no need to schedule a trip to the shop. We come to you, equipped with the latest technology to diagnose, estimate, and resolve your vehicle&apos;s issues efficiently. Our goal is to get you back on the road as quickly as possible, without the hassle of traditional auto repair.",
+    content: "With our mobile diagnostics service, there is no need to schedule a trip to the shop. We come to you, equipped with the latest technology to diagnose, estimate, and resolve your vehicle's issues efficiently. Our goal is to get you back on the road as quickly as possible, without the hassle of traditional auto repair.",
     image: "/placeholder.svg?height=400&width=600",
   },
   {
@@ -95,7 +95,7 @@ export default function DiagnosticsPage() {
                       loading="lazy"
                       width={600} // Set an appropriate width
                       height={400} // Set an appropriate height
-                      className="rounded-lg shadow-md w-full object-cover h-50"
+                      className="rounded-lg shadow-md w-full object-cover"
                     />
                   </div>
                 </div>

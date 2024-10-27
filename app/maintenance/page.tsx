@@ -2,11 +2,11 @@
 
 import Head from "next/head";
 import Header from "../components/Header";
-import Image from 'next/image'
-import { Wrench, Calendar, Clock, Zap, Droplet, Gauge, Cog, CheckCircle } from 'lucide-react'
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import Image from 'next/image';
+import { Wrench, Calendar, Clock, Zap, Droplet, Gauge, Cog, CheckCircle } from 'lucide-react';
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 const maintenanceSections = [
   {
@@ -57,7 +57,7 @@ const maintenanceSections = [
     content: "Our comprehensive safety inspections cover all major systems in your vehicle, ensuring that everything is working correctly and your car is safe to drive.",
     image: "/placeholder.svg?height=400&width=600",
   },
-]
+];
 
 export default function MaintenancePage() {
   return (

@@ -13,7 +13,7 @@ const repairSections = [
     {
       icon: <Wrench className="w-6 h-6" />,
       title: "Major Engine Repair",
-      content: "Engine trouble can be one of the most daunting challenges for vehicle owners, often leading to costly repairs and frustration. But don&apos;t let the stress weigh you down! With Mobile Pros, you can quickly get your vehicle back to 100% without the hassle of leaving your home or paying expensive towing fees. Just give us a call, and we&apos;ll help you determine the best next steps right over the phone!",
+      content: "Engine trouble can be one of the most daunting challenges for vehicle owners, often resulting in costly repairs and frustration. But don’t let the stress weigh you down! With Mobile Mechanic, you can get your vehicle back to 100% without the hassle of leaving your home or paying expensive towing fees. Just give us a call, and we’ll help you determine the best next steps right over the phone!",
       image: "/placeholder.svg?height=400&width=600",
     },
     {

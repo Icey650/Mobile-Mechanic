@@ -21,12 +21,27 @@ export default function MobileMechanic() {
     setFormData(prevState => ({ ...prevState, [name]: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log('Form submitted:', formData);
-    alert('Thank you for your message. We will get back to you soon!');
-    setFormData({ name: '', email: '', phone: '', message: '' });
-  };
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault(); // Prevent the default form submission
+
+    // Send a POST request to the API
+    const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+    });
+
+    // Check if the response is okay
+    if (res.ok) {
+        alert('Thank you for your message. We will get back to you soon!');
+        setFormData({ name: '', email: '', phone: '', message: '' }); // Reset form fields
+    } else {
+        alert('Failed to send message.'); // Alert if sending fails
+    }
+};
+
 
   return (
     <>
@@ -115,23 +130,28 @@ export default function MobileMechanic() {
                 { icon: Car, title: "No Start Service", description: "Quick solutions for vehicles that won&apos;t start", backgroundImage: "/images/engine.jpg", link: "no-start-service" },
               ].map((service, index) => (
                 <Link key={index} href={service.link || '#'} passHref>
-                  <div className="relative bg-white p-6 rounded-lg shadow-md text-center hover:shadow-lg transition duration-300 overflow-hidden group cursor-pointer h-64">
-                    {service.backgroundImage && (
-                      <Image
-                        src={service.backgroundImage}
-                        alt={service.title}
-                        layout="fill"
-                        objectFit="cover"
-                        className="absolute inset-0 w-full h-full object-cover transition-opacity duration-300 group-hover:opacity-100 opacity-20"
-                      />
-                    )}
-                    <div className="relative z-10">
+                <div className="relative bg-white p-6 rounded-lg shadow-md text-center hover:shadow-lg transition duration-300 overflow-hidden group cursor-pointer h-64">
+                  {service.backgroundImage && (
+                    <Image
+                      src={service.backgroundImage}
+                      alt={service.title}
+                      fill
+                      className="absolute inset-0 w-full h-full object-cover transition-opacity duration-300 group-hover:opacity-100 opacity-20"
+                    />
+                  )}
+                  <div className="relative z-10">
+                    <div className="flex justify-center">
                       <service.icon className="w-12 h-12 mx-auto mb-4 text-blue-600" />
-                      <h3 className="text-xl font-semibold mb-2 group-hover:text-white group-hover:bg-black group-hover:bg-opacity-50 transition duration-300">{service.title}</h3>
-                      <p className="text-gray-600 group-hover:text-white group-hover:bg-black group-hover:bg-opacity-50 transition duration-300">{service.description}</p>
                     </div>
+                    <h3 className="text-xl font-semibold mb-2 group-hover:text-white group-hover:bg-black group-hover:bg-opacity-50 transition duration-300">
+                      {service.title}
+                    </h3>
+                    <p className="text-gray-600 group-hover:text-white group-hover:bg-black group-hover:bg-opacity-50 transition duration-300">
+                      {service.description}
+                    </p>
                   </div>
-                </Link>
+                </div>
+              </Link>
               ))}
             </div>
           </div>
