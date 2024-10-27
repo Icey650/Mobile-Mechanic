@@ -11,7 +11,7 @@ const Header = () => {
   return (
     <>
       <Head>
-        <title>Mobile Mechanic | Your Trusted Auto Services</title>
+        <title> Andy&apos;s Mobile Auto Repair | Your Trusted Auto Services</title>
         <meta name="description" content="Andy’s Mobile Auto Repair provides reliable on-site auto services including diagnostics, repairs, and maintenance. Contact us today!" />
         <meta name="keywords" content="mobile mechanic, auto services, vehicle diagnostics, car repairs, mobile auto repair" />
         <meta name="author" content="Andy’s Mobile Auto Repair" />
@@ -21,7 +21,7 @@ const Header = () => {
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <div className="flex items-center">
             <Wrench className="w-8 h-8 mr-2" />
-            <span className="text-xl font-bold">Andy’s Mobile Auto Repair</span>
+            <Link href="/" className="text-xl font-bold">Andy’s Mobile Auto Repair</Link>
           </div>
           <nav className="hidden md:flex space-x-4">
           <Link href="/" className="hover:text-blue-200 transition">Home</Link>

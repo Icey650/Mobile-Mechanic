@@ -20,18 +20,13 @@ const sections = [
   {
     title: "Expert Mobile Mechanics",
     content: "Our mobile mechanics are experts in mobile computer diagnostics, ready to decode what your car is trying to tell us, all from the comfort of your location. Using state-of-the-art diagnostic equipment, we can access your vehicle's systems much like a doctor assesses symptoms before diagnosing an issue.",
-    image: "/images/scannerpic.png",
+    image: "/images/scannerpic1.png",
   },
   {
     title: "Convenience at Your Doorstep",
     content: "With our mobile diagnostics service, there is no need to schedule a trip to the shop. We come to you, equipped with the latest technology to diagnose, estimate, and resolve your vehicle's issues efficiently. Our goal is to get you back on the road as quickly as possible, without the hassle of traditional auto repair.",
-    image: "/placeholder.svg?height=400&width=600",
-  },
-  {
-    title: "Accurate Solutions",
-    content: "This enables us to quickly pinpoint problems and provide accurate solutions. While you could invest in a diagnostic device and tackle the issue yourself, our trained professionals have the expertise to interpret those readings correctly and address the problem on the spot.",
-    image: "/placeholder.svg?height=400&width=600",
-  },
+    image: "/images/scanner21.png",
+  }
 ];
 
 export default function DiagnosticsPage() {

@@ -37,8 +37,8 @@ const repairSections = [
     {
       icon: <Droplet className="w-6 h-6" />,
       title: "Fuel Injectors",
-      content: "Clogged fuel injectors can lead to starting issues and poor fuel efficiency. If your engine is running rough or consuming too much fuel, it&apos;s time to act! Our mobile repair services can diagnose and clean or replace your fuel injectors, ensuring your vehicle stays healthy and efficient.",
-      image: "/placeholder.svg?height=400&width=600",
+      content: "Clogged fuel injectors can lead to starting issues and poor fuel efficiency. If your engine is running rough or consuming too much fuel, it's time to act! Our mobile repair services can diagnose and clean or replace your fuel injectors, ensuring your vehicle stays healthy and efficient.",
+      image: "/images/fuelinjector.png",
     },
     {
       icon: <Compass className="w-6 h-6" />,
@@ -55,8 +55,8 @@ const repairSections = [
     {
       icon: <Disc className="w-6 h-6" />,
       title: "Clutch",
-      content: "For manual transmission drivers, the clutch is one of the most critical components. Regular maintenance is essential to keep your vehicle shifting smoothly. You don&apos;t have to worry about scheduling a time to visit the shop; our mobile mechanics will bring the repair shop to you!",
-      image: "/placeholder.svg?height=400&width=600",
+      content: "For manual transmission drivers, the clutch is one of the most critical components. Regular maintenance is essential to keep your vehicle shifting smoothly. You don't have to worry about scheduling a time to visit the shop; our mobile mechanics will bring the repair shop to you!",
+      image: "/images/clutchkit.png",
     },
 ];
 
